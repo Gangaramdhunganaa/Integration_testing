@@ -42,7 +42,7 @@ class TestSensors(unittest.TestCase):
     # mock_print as a parameter of the test case function.
     @patch('builtins.print')
     def test_check_limits_integration1(self, mock_print):
-        sys.argv = ['sensors_main.py','19','14']
+        sys.argv = ['sensors_main.py','13','11']
         expected_output = "Error: Incorrect command line arguments.\n"
         sensors_main.main()
         output = mock_print.call_args[0][0]
